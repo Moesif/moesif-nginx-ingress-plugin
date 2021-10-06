@@ -6,7 +6,7 @@
 
 ## How to Install
 
-#### Clone to repo
+#### Clone the repo
 
 We'll clone this [repo](https://github.com/Moesif/moesif-nginx-ingress-plugin) which has the codebase to create configmap, mount the plugin, and enable it during the build time.
 
