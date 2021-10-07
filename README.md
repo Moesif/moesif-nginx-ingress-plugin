@@ -13,7 +13,7 @@ We'll clone this [repo](https://github.com/Moesif/moesif-nginx-ingress-plugin) w
 ## How to Use
 
 #### Create a namespace
-Once the repo is clone, we'll create an `ingress-nginx` namespace.
+Once the repo is cloned, we'll create an `ingress-nginx` namespace.
 
 ```bash
 kubectl apply -f namespace.json
@@ -68,7 +68,7 @@ You can always find your Moesif Application Id at any time by logging
 into the [_Moesif Portal_](https://www.moesif.com/), click on the top right menu,
 and then clicking _API Keys_.
 
-Please note that `Moesif Application Id` is required to be updated to capture api calls to your account. Also, don't remove the any of the identity variable set in `server-snippet` directive as Moesif plugin uses it downstream. Additionally, you'd add other moesif config in `server-snippet` for example `set $debug true;`.
+Please note that `Moesif Application Id` is required to be updated to capture api calls to your account. Also, don't remove any of the identity variables set in `server-snippet` directive as Moesif plugin uses it downstream. Additionally, you can add other moesif config in `server-snippet` for example `set $debug true;`.
 
 Next, we'll have to mount the plugins and set the Lua path in the nginx ingress controller deployment
 
